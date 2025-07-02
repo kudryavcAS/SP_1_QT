@@ -1,11 +1,8 @@
 #include "number.h"
 
-Number::Number():x(0), y(0){}
-Number::Number(int _x):x(_x), y(0){}
-Number::Number(int _x, int _y):x(_x), y(_y){}
-Number::Number(const Number& obj):x(obj.x), y(obj.y){}
+Number::Number(){}
 
-void Number::NotLargSumCub(QTextStream& out)const  {
+void Number::NotLargSumCub(QTextStream& out, int x)const  {
     out<<"Числа, меньше Х, равные сумме кубов цифр:";
     for (long long i = 1; i < x; i++) {
         long long c;
@@ -23,7 +20,7 @@ void Number::NotLargSumCub(QTextStream& out)const  {
     out.flush();
 
 }
-void Number::SearchPrimeSumQuad(QTextStream&  out) const {
+void Number::SearchPrimeSumQuad(QTextStream&  out, int x, int y) const {
     int i = x, g = y;
 
     int a, p1, p2, res = 0;
@@ -62,7 +59,7 @@ void Number::SearchPrimeSumQuad(QTextStream&  out) const {
     out.flush();
 
 }
-void Number::FirstNoNullFactRight(QTextStream& out) const
+void Number::FirstNoNullFactRight(QTextStream& out, int x) const
 {
     out<<"Первая ненулевая цифра числа Х!:\n";
     int Answer = 1;
@@ -88,7 +85,7 @@ void Number::FirstNoNullFactRight(QTextStream& out) const
     out.flush();
 }
 
-void Number::DublLarg(QTextStream& out) const{
+void Number::DublLarg(QTextStream& out, int x) const{
 
 
     int a = x;
@@ -96,19 +93,19 @@ void Number::DublLarg(QTextStream& out) const{
     for (int i = a; i != 0; i /= 10) {
         if (i % 10 >= max) max = i % 10;
     }
-    int x = 1;
+    int b = 1;
     for (int i = a; i != 0; i /= 10) {
 
         if (i % 10 != max) {
-            a1 = a1 + (i % 10) * x;
-            x *= 10;
+            a1 = a1 + (i % 10) * b;
+            b *= 10;
 
         }
         else {
-            a1 = a1 + (i % 10) * x;
-            x *= 10;
-            a1 = a1 + (i % 10) * x;
-            x *= 10;
+            a1 = a1 + (i % 10) * b;
+            b *= 10;
+            a1 = a1 + (i % 10) * b;
+            b *= 10;
         }
 
     }

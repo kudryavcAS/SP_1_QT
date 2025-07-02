@@ -104,18 +104,6 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_6">
-        <property name="font">
-         <font>
-          <pointsize>12</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>О приложении</string>
-        </property>
-       </widget>
-      </item>
-      <item>
        <widget class="QPushButton" name="pushButton">
         <property name="font">
          <font>

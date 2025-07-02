@@ -23,10 +23,10 @@ void MainWindow::on_pushButton_2_clicked()
 {
     int x = ui->lineEdit->text().toInt();
 
-    Number numb(x);
+    Number numb;
     QString buffer;
     QTextStream out(&buffer);
-    numb.NotLargSumCub(out);
+    numb.NotLargSumCub(out, x);
 
     ui->textBrowser->setText(buffer);
 
@@ -37,10 +37,10 @@ void MainWindow::on_pushButton_4_clicked()
 {
     int x = ui->lineEdit->text().toInt();
 
-    Number numb(x);
+    Number numb;
     QString buffer;
     QTextStream out(&buffer);
-    numb.DublLarg(out);
+    numb.DublLarg(out, x);
 
     ui->textBrowser->setText(buffer);
 }
@@ -51,10 +51,10 @@ void MainWindow::on_pushButton_3_clicked()
     int x = ui->lineEdit->text().toInt();
     int y = ui->lineEdit_2->text().toInt();
 
-    Number numb(x, y);
+    Number numb;
     QString buffer;
     QTextStream out(&buffer);
-    numb.SearchPrimeSumQuad(out);
+    numb.SearchPrimeSumQuad(out,x ,y);
 
     ui->textBrowser->setText(buffer);
 }
@@ -64,10 +64,10 @@ void MainWindow::on_pushButton_5_clicked()
 {
     int x = ui->lineEdit->text().toInt();
 
-    Number numb(x);
+    Number numb;
     QString buffer;
     QTextStream out(&buffer);
-    numb.FirstNoNullFactRight(out);
+    numb.FirstNoNullFactRight(out, x);
 
     ui->textBrowser->setText(buffer);
 }

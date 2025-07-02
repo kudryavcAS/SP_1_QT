@@ -4,18 +4,13 @@
 
 class Number
 {
-private:
-    int x, y;
 public:
     Number();
-    Number(int _x);
-    Number(int _x, int _y);
-    Number(const Number& obj);
 
-    void NotLargSumCub(QTextStream& out)const;
-    void SearchPrimeSumQuad(QTextStream&  out) const;
-    void FirstNoNullFactRight(QTextStream& out) const;
-    void DublLarg(QTextStream& out) const;
+    void NotLargSumCub(QTextStream& out, int )const;
+    void SearchPrimeSumQuad(QTextStream&  out, int, int) const;
+    void FirstNoNullFactRight(QTextStream& out, int) const;
+    void DublLarg(QTextStream& out, int) const;
 
 };
 #endif // NUMBER_H

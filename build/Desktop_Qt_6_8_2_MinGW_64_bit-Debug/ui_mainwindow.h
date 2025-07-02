@@ -45,7 +45,6 @@ public:
     QPushButton *pushButton_4;
     QPushButton *pushButton_3;
     QPushButton *pushButton_5;
-    QPushButton *pushButton_6;
     QPushButton *pushButton;
     QMenuBar *menubar;
     QStatusBar *statusbar;
@@ -139,12 +138,6 @@ public:
 
         verticalLayout->addWidget(pushButton_5);
 
-        pushButton_6 = new QPushButton(centralwidget);
-        pushButton_6->setObjectName("pushButton_6");
-        pushButton_6->setFont(font);
-
-        verticalLayout->addWidget(pushButton_6);
-
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName("pushButton");
         pushButton->setFont(font);
@@ -180,7 +173,6 @@ public:
         pushButton_4->setText(QCoreApplication::translate("MainWindow", "\320\237\321\200\320\276\320\264\321\203\320\261\320\273\320\270\321\200\320\276\320\262\320\260\321\202\321\214 \320\272\320\260\320\266\320\264\320\276\320\265 \320\262\321\205\320\276\320\266\320\264\320\265\320\275\320\270\320\265 \320\275\320\260\320\270\320\261\320\276\320\273\321\214\321\210\320\265\320\271 \321\206\320\270\321\204\321\200\321\213 X", nullptr));
         pushButton_3->setText(QCoreApplication::translate("MainWindow", "\320\235\320\260\320\271\321\202\320\270 \321\202\320\260\320\272\320\270\320\265 \320\277\321\200\320\276\321\201\321\202\321\213\320\265 P1 \320\270 P2, \321\207\321\202\320\276 X*X-Y*Y=P1*P2", nullptr));
         pushButton_5->setText(QCoreApplication::translate("MainWindow", "\320\235\320\260\320\271\321\202\320\270  \320\277\320\265\321\200\320\262\321\203\321\216 \321\201\320\277\321\200\320\260\320\262\320\260 \320\275\320\265\320\275\321\203\320\273\320\265\320\262\321\203\321\216 \321\206\320\270\321\204\321\200\321\203 \321\203 \321\207\320\270\321\201\320\273\320\260 X!", nullptr));
-        pushButton_6->setText(QCoreApplication::translate("MainWindow", "\320\236 \320\277\321\200\320\270\320\273\320\276\320\266\320\265\320\275\320\270\320\270", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\272\321\200\321\213\321\202\321\214", nullptr));
     } // retranslateUi
 
