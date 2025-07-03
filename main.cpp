@@ -1,5 +1,6 @@
-#include "mainwindow.h"
+//Алексей Кудрявцев, 6-я группа
 
+#include "mainwindow.h"
 #include <QApplication>
 
 
